@@ -1,0 +1,232 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(236, 236, 236);
+}
+/* navigation */
+nav{
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.603);
+    box-shadow: 0px 0px 2px grey;
+}
+nav ul{
+    display: inline;
+    list-style: none;
+}
+/* navigation links  */
+nav ul li a,abbr{
+    text-decoration: none;
+}
+nav ul li a{
+    float: left;
+    font-size: large;
+    color: rgb(52, 138, 138);
+    margin-left: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.3s text-shadow;
+}
+nav ul li a:hover{
+    text-shadow: 0px 2px 2px grey;
+}
+/* navigation button */
+nav ul button{
+    float: right;
+    margin-right:20px;
+    text-transform: capitalize;
+}
+
+/* for main screen section tag */
+section{
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 40px;
+    width: auto;
+}
+/* this is for not making over flow of the content */
+.aslider{
+    position: relative;
+    height: auto;
+    width: inherit;
+    overflow-x: hidden;
+    padding: 5px;
+}
+/* this is for top slider  */
+.mainslider{
+    position: relative;
+    height: 600px;
+    width: inherit;
+}
+.mslider,.mslider img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+/* heading of the blog site */
+.smallcontent{
+    min-height: 10vh;
+    width:250px;
+    box-shadow: 5px 0px 5px grey;
+    position: relative;
+    display: flex;
+}
+.smallcontent h2{
+    min-height: 5vh;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0px 0px 0px 0px ;
+    background: linear-gradient( to left, #f32170, #ff6b08, #cf23cf, #eedd44); 
+        -webkit-text-fill-color: transparent; 
+        -webkit-background-clip: text; 
+}
+.smallcontent sup{
+    text-transform: lowercase;
+    color: grey;
+    font-size: small;
+    display: block;
+}
+
+.smallcontent img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: transform .3s ease;
+}
+.smallcontent div{
+    position: relative;
+    width:100px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.smallcontent img:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+.smallcontent button{
+    color:white;
+    background-color: #f32170;
+    border: none;
+    outline: none;
+    padding:5px;
+    text-transform:capitalize;
+    font-weight: 600;
+    transition: 0.3s all ease;
+    margin: 2px;
+}
+.smallcontent button:hover{
+    box-shadow:inset 0px 0px 5px white;
+    cursor: pointer;
+}
+/* for smallboxes of receipes in homepage */
+.smallboxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    min-height:10vh ;
+    width: auto;
+}
+.smallboxes li{
+    margin-bottom: 20px;
+    list-style: none;
+}
+.smallboxes li a{
+    text-decoration: none;
+}
+.title{
+    min-height: 10vh;
+    width: auto;
+    margin-top:10px;
+    background-color: rgb(52, 138, 138);
+    text-align: center;
+    text-shadow: 5px 0px 0px rgb(128, 0, 0);
+    color: white;
+}
+/* for all button */
+.btn{
+    height:auto;
+    width: auto;
+    outline: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    background: transparent;
+}
+
+/* for slider buttons */
+.right,.left{
+    position: absolute;
+    top:50%;
+    z-index: 1;
+    transition: all 0.3s ease;
+    height: 0px;
+    width: 0px;
+}
+.right:hover{
+    border-top:10px solid rgba(100, 100, 100, 0.5);
+    border-right: 10px solid rgb(100, 100,100, 0.5);
+}
+.left:hover{
+    border-top:10px solid rgb(100, 100,100, 0.5) ;
+    border-left: 10px solid rgb(100, 100,100, 0.5);
+}
+.right{
+    right: 10px;
+    transform: rotate(45deg);
+    border-top:10px solid  ;
+    border-right: 10px solid ;
+}
+.left{
+    left: 10px;
+    transform: rotate(-45deg);
+    border-top:10px solid  ;
+    border-left: 10px solid ;
+}
+/* footer */
+footer{
+    min-height:min-content;
+    background-color: white;
+    padding: 20px;
+    margin: 0px 100px;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* inside footer div box */
+.box{
+    display: inline;
+    min-height: 100px;
+    min-width: 100px;
+    float:left;
+}
+.box>p{
+    font-style: oblique;
+}
+.box>p>span{
+    margin-right: 50px;
+    font-size: 20px;
+}
+.disco{
+    height:90%;
+    width: 90%;
+    position: fixed;
+    left: 5%;
+    right: 5%;
+    top:5%;
+    bottom:5%;
+    z-index: 2;
+    border-radius:10px;
+}
+.close{
+    text-transform: uppercase;
+    font-weight: bolder;
+    position: absolute;
+    right: 20px;
+    top:20px;
+    cursor: pointer;
+}
